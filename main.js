@@ -1,19 +1,19 @@
 
         function authenticateUser(){
 
-          let userPassword = prompt("Please enter the password.");
+          
           let attempts = 0;
           
           while (attempts < 3) {
+            let userPassword = prompt("Please enter the password.");
+            
             if(userPassword === "myPassword1!"){
-              console.log("password accepted");
+              alert("password accepted");
               break;
-               
-               
-              }else{
+               }else{
                   attempts+=1
-                  userPassword = prompt("Please enter the password.")
-                  console.log("Password incorrect " + (3-attempts) + " attempt left");
+                  userPassword
+                  alert("Password incorrect " + (3-attempts) + " attempt left");
                   
                 }
               }
