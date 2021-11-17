@@ -2,6 +2,6 @@ console.log("hello");
 
 let userPassword = prompt("Please enter the password.");
 
-if(password == "myPassword"){
+if(userPassword === "myPassword1!"){
     alert("My secret information here");
 }
