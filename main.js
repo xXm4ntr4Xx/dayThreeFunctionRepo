@@ -1,7 +1,17 @@
-console.log("hello");
-
 let userPassword = prompt("Please enter the password.");
 
-if(userPassword === "myPassword1!"){
-    alert("My secret information here");
-}
+let attempts = 0;
+
+
+while (attempts < 3) {
+      if(userPassword === "myPassword1!"){
+        console.log("password accepted");
+        break;
+         
+         
+        }else{
+            attempts+=1
+            userPassword = prompt("Please enter the password.")
+            console.log("Password incorrect");
+          }
+        }
